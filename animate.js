@@ -46,23 +46,23 @@ function animate(obj,json,callback)
 }
 var box=document.getElementById('bigbox');
 var slider=document.getElementById('slider');
-var left=document.getElementById('left');
-var right=document.getElementById('right');
+var left=document.getElementById('leftsign');
+var right=document.getElementById('rightsign');
 var NavLiList=document.getElementById('circle').children;
 var index=1;//定义1200*index
 var timer;
 var speed=-500;
-var title=document.getElementById('word');
+var titlewords=document.getElementById('words');
 //实现标题的滚动
 window.onload=function()
 {
 	setInterval(function(){
-		if(speed===800)
+		if(speed===1000)
 		{
 			speed=-500;
 		}
 		speed+=2;
-		title.style.right=speed+"px";
+		titlewords.style.right=speed+"px";
 	},20)
 }
 function prev()
@@ -120,7 +120,7 @@ for(var i=0;i<NavLiList.length;i++)
 		changeColor(index-1);
 	}
 }
-//小按钮背景色切换
+/
 function navChange()
 {
 	Navlist[index-1].className='active';
