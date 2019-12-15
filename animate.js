@@ -120,7 +120,7 @@ for(var i=0;i<NavLiList.length;i++)
 		changeColor(index-1);
 	}
 }
-/
+//小按钮背景色切换
 function navChange()
 {
 	Navlist[index-1].className='active';
