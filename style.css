@@ -1,11 +1,21 @@
-
-.top{ 
+/*2018011773 3班 谢婉琴*/
+.allbox{
+	 border-left:2px solid black; 
+    border-right:2px solid black; 
+    width:100%;
+    height:1200pxs;
+}
+#allbox{
+	 border-left:2px solid black; 
+    border-right:2px solid black; 
+    width:100%;
+    height:1200pxs;
+}
+.headbox{ 
     background: gray;
     width: 100%;
     height: 20px;
-}
-.borderleft{
-	border-left: 3px solid black;
+    margin:0px,auto; 
 }
 #topline{
     width:900px;
@@ -16,13 +26,14 @@
     border: 1px solid rgb(218, 217, 217);
     position: relative;
 }
-.top img{
+.headbox img{
     width: 16px;
     height: 16px;
     position: absolute;
-    left: 130px;   
+    left: 130px; 
+    
 }
-.top p
+.headbox p
 {
     text-align: center;
     line-height: 22px;
@@ -56,6 +67,7 @@
     display:block;
     cursor:pointer;
     font-size:30px;
+
 }
 .slider{
    height: 382px;
@@ -64,23 +76,27 @@
    left:-1200px; 
    margin-top:20px;
    overflow: hidden;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+
 }
 #slide{
     display: inline-block;
     width: 1200px;
     height: 382px;
-    margin-left: -4px;
+    margin-left: -5px;
 
 }
 img{
     height: 400px;
     width: 1200px;
-
+   /* border-left:2px solid black; 
+    border-right:2px solid black;*/  
 }
-#left{
+#leftsign{
     left: 30px;
 }
-#right{
+#rightsign{
     right: 30px;
 }
 .circle{
@@ -90,6 +106,7 @@ img{
 }
 .circle .active{
     background: red;
+    color:white;
 }
 .circle li{
     width:20px;
