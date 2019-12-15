@@ -51,20 +51,8 @@ var right=document.getElementById('rightsign');
 var NavLiList=document.getElementById('circle').children;
 var index=1;//定义1200*index
 var timer;
-var speed=-500;
+var speed=-600;
 var titlewords=document.getElementById('words');
-//实现标题的滚动
-window.onload=function()
-{
-	setInterval(function(){
-		if(speed===1000)
-		{
-			speed=-500;
-		}
-		speed+=2;
-		titlewords.style.right=speed+"px";
-	},20)
-}
 function prev()
 {
 	index--;
@@ -143,4 +131,10 @@ function changeColor()
 	{
 		NavLiList[index-1].className='active';
 	}
+}
+//实现标题的滚动
+window.onload=function()
+{
+	setInterval(function(){if(speed===1000){speed=-600;}speed+=3;titlewords.style.right=speed+"px";
+	},25)
 }
